@@ -16,10 +16,8 @@ namespace UWPDisplayActionSheet
 			InitializeComponent ();
 		}
 
-        protected override async void OnAppearing()
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            base.OnAppearing();
-
             await Helper.ProcessData();
         }
     }
